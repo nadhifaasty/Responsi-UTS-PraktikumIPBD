@@ -1,0 +1,19 @@
+[2026-04-22T00:00:09.196+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-04-22T00:00:09.262+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: wired_pipeline_dag.transform_data manual__2026-04-22T00:00:04.390949+00:00 [queued]>
+[2026-04-22T00:00:09.278+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: wired_pipeline_dag.transform_data manual__2026-04-22T00:00:04.390949+00:00 [queued]>
+[2026-04-22T00:00:09.279+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-04-22T00:00:09.305+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_data> on 2026-04-22 00:00:04.390949+00:00
+[2026-04-22T00:00:09.322+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=523) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-04-22T00:00:09.324+0000] {standard_task_runner.py:63} INFO - Started process 524 to run task
+[2026-04-22T00:00:09.322+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'wired_pipeline_dag', 'transform_data', 'manual__2026-04-22T00:00:04.390949+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/wired_dag.py', '--cfg-path', '/tmp/tmp56_fkw4p']
+[2026-04-22T00:00:09.326+0000] {standard_task_runner.py:91} INFO - Job 4: Subtask transform_data
+[2026-04-22T00:00:09.435+0000] {task_command.py:426} INFO - Running <TaskInstance: wired_pipeline_dag.transform_data manual__2026-04-22T00:00:04.390949+00:00 [running]> on host f24826a89353
+[2026-04-22T00:00:09.616+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mahasiswa' AIRFLOW_CTX_DAG_ID='wired_pipeline_dag' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2026-04-22T00:00:04.390949+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-22T00:00:04.390949+00:00'
+[2026-04-22T00:00:09.619+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-04-22T00:00:09.673+0000] {logging_mixin.py:188} INFO - [✓] Transformasi selesai, 67 artikel siap masuk DB.
+[2026-04-22T00:00:09.707+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-04-22T00:00:09.708+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-04-22T00:00:09.729+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=wired_pipeline_dag, task_id=transform_data, run_id=manual__2026-04-22T00:00:04.390949+00:00, execution_date=20260422T000004, start_date=20260422T000009, end_date=20260422T000009
+[2026-04-22T00:00:09.792+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-04-22T00:00:09.839+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-04-22T00:00:09.843+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
