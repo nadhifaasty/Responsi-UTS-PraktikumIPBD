@@ -16,6 +16,8 @@ Pipeline data end-to-end untuk mengambil, memproses, dan menyimpan data artikel 
 ---
 
 ## Struktur Project
+
+```
 wired-pipeline/
 │
 ├── scraper/
@@ -29,7 +31,9 @@ wired-pipeline/
 ├── dags/
 │   └── wired_dag.py      ← Airflow DAG
 │
-└── docker-compose.yml    ← Airflow + PostgreSQL
+├── docker-compose.yml    ← Airflow + PostgreSQL
+└── README.md
+```
 
 ---
 
